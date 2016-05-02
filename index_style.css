@@ -9,10 +9,8 @@
   clear: both;
 }
 .wrapper{
-  /* background-color: #fff; */
   margin: auto;
   width: 1200px;
-  /* padding: 10px; */
 }
 .side-bar{
   position: fixed;
@@ -79,9 +77,6 @@ nav a{
 nav a:hover{
   color: #000000;
 }
-.top-b{
-  /* padding-bottom: 5px; */
-}
 .t-txt1{
   position: absolute;
   font-size: 10px;
@@ -120,7 +115,6 @@ nav a:hover{
 .b-list{
   float: left;
   padding: 7px 0;
-
   position: relative;
 }
 .right{
@@ -170,8 +164,7 @@ nav a:hover{
   font-weight: 400;
   padding: 30px;
 }
-/* 這邊 */
-.wp-list, .mp-list{
+.p-list{
   float: left;
   width: 268px;
   height: 400px;
@@ -182,13 +175,35 @@ nav a:hover{
   position: relative;
   background-color: #fff;
 }
-.wp-list:hover, .mp-list:hover{
+.p-list:hover{
   border: 1px solid #E7E7E6;
   border-bottom-width: 0;
 }
 
-.wp-list a, .mp-list a{
+.p-list a{
   text-decoration: none;
+}
+.pd-detail-pics{
+  display: none;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.p-list:hover .pd-detail-pics{
+  display: block;
+}
+.pics > img{
+  display: block;
+  border: 1px solid #E7E7E6;
+}
+.active > img{
+  border-color: #000;
+}
+.row-2 > img{
+  margin: 5px 0;
+}
+.pics > img:hover{
+  border-color: #000;
 }
 .p-name{
   padding: 15px;
@@ -252,7 +267,7 @@ nav a:hover{
   transition: .7s;
 }
 
-.wp-list:hover .dropbtn-content, .mp-list:hover .dropbtn-content{
+.p-list:hover .dropbtn-content{
   display: block;
   z-index: 1;
 }
@@ -280,7 +295,6 @@ nav a:hover{
 }
 .foo-list-1, .foo-list-2{
   float: left;
-  /* margin: 0px 20px; */
   padding: 10px 0 ;
   margin-left: 30px;
 }
@@ -289,7 +303,6 @@ nav a:hover{
 }
 .foo-list-2{
   width: 145px;
-  /* margin-left: 30px; */
 }
 .foo-logo{
   padding-bottom: 20px;
@@ -362,5 +375,4 @@ footer p{
   font-size: 12px;
   font-weight: 900;
   padding: 10px 0;
-  /* line-height: 20px; */
 }
